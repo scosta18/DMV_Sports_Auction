@@ -1,0 +1,25 @@
+Here's my understanding of your project goals:
+
+Project Overview:
+
+You’re building a soccer player auction app where users can bid on players.
+The app will have two main user roles: Admin and Bidders.
+Admin Role:
+
+Login with a 4-digit key to access admin functions.
+Approve new bidders: When a bidder registers, their profile will initially be in a “pending” state. Only after admin approval can they participate in bidding.
+Admin-only access: Admin will have access to certain restricted routes for managing the app (like approving users).
+Bidder Role:
+
+Registration: Bidders create a profile on the app, which admins then approve.
+Approved Access Only: Only approved bidders can log in and participate in bidding.
+Tech Requirements:
+
+Authentication: We’ll use JWT for authenticating users (both admin and bidders) and protecting specific routes.
+Hosting: The app will be hosted online (e.g., on Heroku) so users can access it over the web.
+Step-by-Step Development:
+
+Step 1: Set up the environment and basic server with Express.
+Step 2: Create routes for admin login, bidder registration, and admin approval.
+Step 3: Set up JWT authentication to protect routes based on user roles.
+Step 4: Deploy the app to Heroku for access.
